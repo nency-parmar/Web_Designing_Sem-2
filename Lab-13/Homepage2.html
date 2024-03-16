@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Home Page
+	</title>
+	<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+		}
+		.page
+		{
+			height: 120vh;
+			border: 1px solid;
+		}
+		.header
+		{
+			height: 8%;
+			width: 100%;
+/*			border: 1px solid whitesmoke;*/
+			background-color: black;
+		}
+		.left
+		{
+			height: 100%;
+			width: 20%;
+/*			border: 1px solid whitesmoke; */
+			float: left;
+		}
+		.guitar
+		{
+			height: 100%;
+			width: 30%;
+/*			border: 1px solid;*/
+			float: left;
+		}
+		.guitartext
+		{
+			height: 100%;
+			width: 70%;
+/*			border: 1px solid;*/
+			float: left;
+			color: whitesmoke;
+			text-align: center;
+			font-size: 40px;
+			display: flex;
+			align-items: center;
+		}
+		.right
+		{
+			height: 100%;
+			width: 80%;
+/*			border: 1px solid whitesmoke;*/
+			float: left;
+		}
+		.iconbar
+		{
+			height: 100%;
+			width: 30%;
+/*			border: 1px solid whitesmoke;*/
+			float: right;
+			display: flex;
+			justify-content: space-between;
+			background-color: black;
+		}
+		.menubar
+		{
+			height: 100%;
+			width: 50%;
+/*			border: 1px solid whitesmoke;*/
+			float: right;
+			display: flex;
+		}
+		.icons
+		{
+			height: 100%;
+			width: 14%;
+/*			border: 1px solid whitesmoke;*/
+		}
+		.menu
+		{
+			height: 100%;
+			width: 33.33%;
+/*			border: 1px solid whitesmoke;*/
+		}
+		.content
+		{
+			height: 92%;
+			width: 100%;
+/*			border: 1px solid;*/
+			background-color: grey;
+		}
+		.top
+		{
+			height: 30%;
+			width: 100%;
+			float: left;
+/*			border: 1px solid;*/
+			padding: 2% 5% 2% 2%;
+		}
+		.img
+		{
+			height: 100%;
+			width: 100%;
+/*			border: 1px solid;*/
+			background-image: url("https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29uY2VydHxlbnwwfHwwfHx8MA%3D%3D");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			color: whitesmoke;
+			text-align: right;
+			display: flex;
+			align-items: center;
+/*			justify-content: right;*/
+			font-size: 50px;
+			font-family: fantasy;
+			font-weight: bolder;
+		}
+		.center
+		{
+			height: 70%;
+			width: 100%;
+			float: left;
+/*			border: 1px solid;*/
+		}
+		.images
+		{
+			height: 100%;
+			width: 100%;
+/*			border: 1px solid;*/
+			padding: 2%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.image1
+		{
+			height: 100%;
+			width: 23%;
+/*			border: 1px solid;*/
+		}
+		.image2
+		{
+			height: 100%;
+			width: 23%;
+/*			border: 1px solid;*/
+		}
+		.image3
+		{
+			height: 100%;
+			width: 23%;
+/*			border: 1px solid;		*/
+		}
+		.image4
+		{
+			height: 100%;
+			width: 23%;
+/*			border: 1px solid;*/
+		}
+		.imgpart
+		{
+			height: 50%;
+			width: 100%;
+/*			border: 1px solid;*/
+		}
+		.textpart
+		{
+			height: 50%;
+			width: 100%;
+/*			border: 1px solid;*/
+			background-color: whitesmoke;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="page">
+		<div class="header">
+			<div class="left">
+				<div class="guitar">
+					<img src="images-removebg-preview.png" style="height:100%; width: 100%;">
+				</div>
+				<div class="guitartext">
+					SoundAMP
+				</div>
+			</div>
+			<div class="right">
+				<div class="iconbar">
+					<div class="icons">
+						<img src="icons8-youtube-24.png" style="height: 100%; width: 90%;">
+					</div>
+					<div class="icons">
+						<img src="icons8-facebook-24.png" style="height:80%; width: 100%; margin-top:8px;">
+					</div>
+					<div class="icons">
+						<img src="icons8-google-plus-24.png" style="height:100%; width: 100%;">
+					</div>
+					<div class="icons">
+						<img src="icons8-github-24.png" style="height:80%; width: 100%; margin-top:8px;">
+					</div>
+					<div class="icons">
+						<img src="icons8-pinterest-24.png" style="height:100%; width: 100%;">
+					</div>
+					<div class="icons">
+						<img src="icons8-instagram-24.png" style="height:90%; width: 100%; margin-top:5px;">
+					</div>
+					<div class="icons">
+						<img src="icons8-twitter-24.png" style="height:80%; width: 100%; margin-top:8px;">
+					</div>
+				</div>
+				<div class="menubar">
+					<div class="menu">
+						<select style="background-color: black; color:whitesmoke; font-size: 15px; margin-top: 20px; margin-left: 20px;">
+						<option disabled selected> HTML Templets </option>
+							<option> abc </option>
+							<option> xyz </option>
+						</select>
+					</div>
+					<div class="menu">
+						<select style="background-color: black; color:whitesmoke; font-size: 15px; margin-top: 20px;">
+						<option disabled selected> More HTML Templets </option>
+							<option> abc </option>
+							<option> xyz </option>
+						</select>
+					</div>
+					<div class="menu">
+						<button style="background-color:skyblue; border-radius: 25px 25px; color:whitesmoke; font-size: 20px; margin-top: 18px; margin-left: 10px;">
+							Download Now
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="top">
+				<div class="img">
+					ALL EVENT
+				</div>
+			</div>
+			<div class="center">
+				<div class="images">
+					<div class="image1">
+						<div class="imgpart">
+							<img src="https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?cs=srgb&dl=pexels-thibault-trillet-167636.jpg&fm=jpg"
+							style="height: 100%; width: 100%; background-repeat: no-repeat;">
+						</div>
+						<div class="textpart">
+							10/05/2018
+							<br>
+							<h1 style="font-family: fantasy;">
+								Night Laser Show
+							</h1>
+							#hip-hop #mb #dance
+							<br>
+							We Are happy to announce this special laser show.
+							<br>
+							<button style="background-color: skyblue; border-radius: 25px 25px; color: whitesmoke; margin-left: 100px; font-size: 20px ; border-color: skyblue;">
+								See More...
+							</button>
+						</div>
+					</div>
+					<div class="image2">
+						<div class="imgpart">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3OH8OJsOfC9GHXBgUSn0ABVZcVCztvdzmlg&usqp=CAU"
+							style="height: 100%; width: 100%; background-repeat: no-repeat;">
+						</div>
+						<div class="textpart">
+							14/05/2018
+							<br>
+							<h1 style="font-family: fantasy;">
+								Live Music
+							</h1>
+							#live #rock #alternative
+							<br>
+							Special event for our rock fans! Live music show.
+							<br>
+							<button style="background-color: skyblue; border-radius: 25px 25px; color: whitesmoke; margin-left: 100px; font-size: 20px ; border-color: skyblue;">
+								See More...
+							</button>
+						</div>
+					</div>
+					<div class="image3">
+						<div class="imgpart">
+							<img src="https://i.pinimg.com/736x/0a/e6/b4/0ae6b43e8e00ad25935937c37e71e88f.jpg"
+							style="height: 100%; width: 100%; background-repeat: no-repeat;">
+						</div>
+						<div class="textpart">
+							10/04/2018
+							<br>
+							<h1 style="font-family: fantasy;">
+								DJ - Master Class
+							</h1>
+							#dj #master-class
+							<br>
+							DJ WoodSmell will teach you new tricks please sign up.
+							<br>
+							<button style="background-color: skyblue; border-radius: 25px 25px; color: whitesmoke; margin-left: 100px; font-size: 20px ; border-color: skyblue;">
+								See More...
+							</button>
+						</div>
+					</div>
+					<div class="image4">
+						<div class="imgpart">
+							<img src="https://media.istockphoto.com/id/1199243596/photo/concert-stage-on-rock-festival-music-instruments-silhouettes.jpg?s=612x612&w=0&k=20&c=BNqLID7OXEA9SI0znQNQ2K9ywQ0vdVL_0Pf0piOH8I4="
+							style="height: 100%; width: 100%; background-repeat: no-repeat;">
+						</div>
+						<div class="textpart">
+							10/04/2018
+							<br>
+							<h1 style="font-family: fantasy;">
+								Best Night Party
+							</h1>
+							#party #club
+							<br>
+							Our traditional event : best hits all night long.
+							<br>
+							<br>
+							<button style="background-color: skyblue; border-radius: 25px 25px; color: whitesmoke; margin-left: 100px; font-size: 20px; border-color: skyblue;">
+								See More...
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
