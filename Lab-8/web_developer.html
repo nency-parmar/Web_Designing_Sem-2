@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Web Developer
+	</title>
+	<style type="text/css">
+		
+		*
+		{
+			box-sizing: border-box;
+		}
+		body
+		{
+			height: 120vh;
+			padding: 2%;
+			border: 1px solid blue;
+		}
+		.page
+		{
+			height: 100%;
+			width: 100%;
+			background-image: url("https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_640.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			border: 1px solid black;
+		}
+		.top
+		{
+			height: 50%;
+			width: 100%;
+			border: 1px solid ghostwhite;
+		}
+		.bottom
+		{
+			height: 50%;
+			width: 100%;
+			border: 1px solid ghostwhite;
+		}
+		.header
+		{
+			height: 20%;
+			width: 100%;
+			border: 1px solid white;
+		}
+		.content
+		{
+			height: 80%;
+			width: 100%;
+			border: 1px solid white;
+			background-color: ghostwhite;
+		}
+		.left
+		{
+			height: 100%;
+			width: 20%;
+			border: 1px solid white;
+			color: white;
+			float: left;
+			top: 50%;
+			left: 50%;
+			font-size: 35px;
+			padding: 25px;
+		}
+		.right
+		{
+			height: 100%;
+			width: 80%;
+			border: 1px solid white;
+			text-align: center;
+			float: left;
+		}
+		.talk
+		{
+			height: 100%;
+			width: 25%;
+			border: 1px solid white;
+			float: right;
+			font-size: 35px;
+		}
+		.services
+		{
+			height: 100%;
+			width: 25%;
+			border: 1px solid white;
+			float: right;
+			color: white;
+			font-size: 35px;
+		}
+		.about
+		{
+			height: 100%;
+			width: 25%;
+			border: 1px solid white;
+			float: right;
+			color: white;
+			font-size: 35px;
+		}
+		.home
+		{
+			height: 100%;
+			width: 25%;
+			border: 1px solid white;
+			float: right;
+			color: white;
+			font-size: 35px;
+		}
+		.text
+		{
+			height: 20%;
+			width: 100%;
+			border: 1px solid black;
+			font-size: 35px;
+			text-align: center;
+		}
+		.img
+		{
+			height: 80%;
+			width: 100%;
+			border: 1px solid black;
+		}
+		.text1
+		{
+			height: 100%;
+			width: 35%;
+			border: 1px solid black;
+			float: left;
+			font-size: 35px;
+		}
+		.image
+		{
+			height: 100%;
+			width: 30%;
+			border: 1px solid black;
+			float: left;
+			background-image: url("https://www.shutterstock.com/image-photo/young-beautiful-girl-preparing-exams-260nw-622036163.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			border-radius: 150px 150px;
+		}
+		.text2
+		{
+			height: 100%;
+			width: 35%;
+			border: 1px solid black;
+			float: left;
+		}
+		.header2
+		{
+			height: 20%;
+			width: 100%;
+			border: 1px solid black;
+			float: left;/*
+			background-color: darkblue;*/
+		}
+		.content2
+		{
+			height: 80%;
+			width: 100%;
+			border: 1px solid black;
+			float: left;
+			background-color: lightpink;
+		}
+		.logo1
+		{
+			height: 100%;
+			width: 25%;
+			border: 1px solid white;
+			float: left;
+			background-image: url("https://i.pinimg.com/originals/31/98/fc/3198fc856619261e439a553d8b6dd83f.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.logo2
+		{
+			height: 100%;
+			width: 25%;
+			border: 1px solid white;
+			float: left;
+			background-image: url("https://miro.medium.com/v2/resize:fit:727/1*I0E7U5xI-4UvnkExSGKp_w.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.logo3
+		{
+			height: 100%;
+			width: 25%;
+			border: 1px solid white;
+			float: left;
+			background-image: url("https://content.linkedin.com/content/dam/brand/site/img/logo/logo-hero.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.logo4
+		{
+			height: 100%;
+			width: 25%;
+			border: 1px solid white;
+			float: left;
+			background-image: url("https://logovectorseek.com/wp-content/uploads/2020/10/behance-logo-vector.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.top1
+		{
+			height: 70%;
+			width: 100%;
+			border: 1px solid black;
+		}
+		.left2
+		{
+			height: 100%;
+			width: 40%;
+			border: 1px solid black;
+			float: left;
+			font-size: 60px;
+			color: white;
+			padding-left: 50px;
+		}
+		.right2
+		{
+			height: 100%;
+			width: 60%;
+			border: 1px solid black;
+			float: left;
+			font-size: 20px;
+			color: white;
+		}
+		.button1
+		{
+			height: 100%;
+			width: 33.33%;
+			border: 1px solid black;
+			float: left;
+		}
+		.button2
+		{
+			height: 100%;
+			width: 33.33%;
+			border: 1px solid black;
+			float: left;
+		}
+		.button3
+		{
+			height: 100%;
+			width: 33.33%;
+			border: 1px solid black;
+			float: left;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="top">
+			<div class="header">
+				<div class="left">
+					<button style="background-color: purple; border-radius: 25px 25pxs; box-align: center; color: white; font-size: 35px;">
+						A
+					</button>
+					Alea
+				</div>
+				<div class="right">
+					<div class="talk">
+						<button style="background-color: purple; border-radius: 35px 35px; color: white; font-size: 25px;">
+							Let's talk
+						</button>
+					</div>
+					<div class="services">
+						Services
+					</div>
+					<div class="about">
+						About
+					</div>
+					<div class="home">
+						Home
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="text">
+					I'm <span style="color:purple;">Alea</span>. I will Create a Web Design that can give Value to your Company 
+				</div>
+				<div class="img">
+					<div class="text1">
+         				<button style="background-color: purple; color: white; text-align: center; border-radius: 125px 125px; margin-left: 350px; font-size: 25px;">
+         					UI/UX designer<br>4 Years
+         				</button>
+					</div>
+					<div class="image">
+						
+					</div>
+					<div class="text2">
+						<button style="background-color: purple; color: white; text-align: center; border-radius: 125px 125px; margin-top: 125px; font-size: 25px;">
+        					Web Developer<br>2 Years
+        				</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="header2">
+				<div class="logo1">
+					
+				</div>
+				<div class="logo2">
+					
+				</div>
+				<div class="logo3">
+					
+				</div>
+				<div class="logo4">
+					
+				</div>
+			</div>
+			<div class="content2">
+				<div class="top1">
+					<div class="left2">
+						About 
+						<br>
+						Me.
+					</div>
+					<div class="right2">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<div class="bottom1">
+					<div class="button1">
+						
+					</div>
+					<div class="button2">
+						
+					</div>
+					<div class="button3">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
