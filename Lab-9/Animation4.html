@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Animation
+	</title>
+
+	<style type="text/css">
+		
+		@keyframes Paragraph-Animation
+		{
+			0%
+			{
+				margin-left: 0px;
+				margin-top: 0px;
+			}
+			25%
+			{
+				margin-left: 500px;
+				margin-top: 0px;
+			}
+			50%
+			{
+				margin-left: 500px;
+				margin-top: 500px;
+			}
+			75%
+			{
+				margin-left: 0px;
+				margin-top: 500px;
+			}
+			to
+			{
+				background-color: magenta;
+			}
+
+			from
+			{
+				background-color: magenta;				
+				position: absolute;
+			}		
+		}
+		div
+		{
+			animation-name: Paragraph-Animation;
+			animation-duration: 5s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div>
+		
+		Priyanshiba Gohil,<br>
+		B.Tech CSE 2nd Sem,<br>
+		Darshan University.
+
+	</div>
+
+</body>
+</html>
