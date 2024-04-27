@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Wire Frame Of Amazone
+	</title>
+	<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+		}
+		body
+		{
+			height: 112vh;
+			border: 1px solid black;
+			padding: 5%;
+		}
+		.page
+		{
+			height: 100%;
+			width: 50%;
+			border: 1px solid black;
+			margin-left: 350px;
+/*			border-radius: 25px 25px;*/
+		}
+		.head
+		{
+			height: 10%;
+			width: 100%;
+/*			border: 1px solid black;*/
+			background-image: url("https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png");
+			background-repeat: no-repeat;
+			background-size: 50% 100%;
+			padding-left: 50%;
+			text-align: right;
+			font-size: 50px;
+			font-family: fantasy;
+			background-color: skyblue;
+			color: whitesmoke;
+		}
+		.body
+		{
+			height: 80%;
+			width: 100%;
+/*			border: 1px solid black;*/
+			background-color: lightgrey;
+		}
+		.footer
+		{
+			height: 10%;
+			width: 100%;
+/*			border: 1px solid black;*/
+/*			border-radius: 25px 25px;*/
+		}
+		.panel1
+		{
+			height: 100%;
+			width: 25%;
+/*			border: 1px solid black;*/
+			background-color: skyblue;
+			float: left;
+			font-size: 25px;
+		}
+		.home
+		{
+			height: 80%;
+			width: 60%;
+			margin-top: 3%;
+			margin-left: 23%;
+/*			border: 1px solid black;*/
+		}
+		.panel2
+		{
+			height: 100%;
+			width: 25%;
+/*			border: 1px solid black;*/
+			background-color: skyblue;
+			float: left;
+			font-size: 25px;
+			text-align: center;
+			padding-top:15px;
+		}
+		.products
+		{
+			height: 80%;
+			width: 90%;/*
+			margin: 1%;*/
+/*			border: 1px solid black;*/
+/*			background-color: pink;*/
+			text-align: center;
+			color: whitesmoke;
+			font-family: fantasy;
+/*			border-radius: 25px 25px;*/		
+		}
+		.panel3
+		{
+			height: 100%;
+			width: 25%;
+	/*		border: 1px solid black;*/
+			background-color: skyblue;
+			float: left;
+			font-size: 25px;
+		/*	background-image: url("./Cart.png");
+			align-items: center;
+	/*		background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);*/
+			background-repeat: no-repeat;
+			background-size: 50% 50%;*/
+		}
+		.cart
+		{
+			height: 80%;
+			width: 60%;
+			margin-top: 3%;
+			margin-left: 23%;
+/*			border: 1px solid black;*/
+		}
+		.panel4
+		{
+			height: 100%;
+			width: 25%;
+/*			border: 1px solid black;*/
+			background-color: skyblue;
+			padding-top: 10px;
+			float: left;
+			font-size: 25px;
+			text-align: right;
+		}
+		.profile
+		{
+			height: 100%;
+			width: 60%;
+			margin-bottom: 50px;
+			margin-left: 23%;
+
+		}
+		.slide
+		{
+			height: 40%;
+			width: 100%;
+			border: 1px solid black;
+
+		}
+		.trending
+		{
+			height: 60%;
+			width: 100%;
+/*			border: 1px solid black;*/
+		}
+		.text
+		{
+			height: 15%;
+			width: 100%;
+			border: 1px solid black;
+			font-size: 40px;
+			text-align: center;
+			background-color: skyblue;
+		}
+		.images
+		{
+			height: 85%;
+			width: 100%;
+			border: 1px solid black;
+			padding: 2%;
+		}
+		.img1
+		{
+			height: 100%;
+			width: 30%;
+			border: 2px solid black;
+			border-radius: 5px 5px;
+			float: left;
+			box-shadow: 1px 2px 10px 5px yellow;
+		}
+		.text1
+		{
+			height: 20%;
+			width: 100%;
+			border: 1px solid;
+			font-family: cursive;
+			background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+		}
+		.items
+		{
+			height: 70%;
+			width: 100%;
+			border: 1px solid;
+		}
+		.footer1
+		{
+			height: 10%;
+			width: 100%;
+			border: 1px solid;
+			text-align: center;
+			background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+		}
+		.it1
+		{
+			height: 50%;
+			width: 50%;
+			border: 1px solid;
+			float: left;
+		}
+		.ac
+		{
+			height: 90%;
+			width: 100%;
+			border: 1px solid;
+		}
+		.aC
+		{
+			height: 10%;
+			width: 100%;
+			border: 1px solid;
+			text-align: center;
+			font-size: 07px;
+		}
+		.fridge
+		{
+			height: 90%;
+			width: 100%;
+			border: 1px solid;
+		}
+		.friDge
+		{
+			height: 10%;
+			width: 100%;
+			border: 1px solid;
+			text-align: center;
+			font-size: 07px;
+		}
+		.it2
+		{
+			height: 50%;
+			width: 50%;
+			border: 1px solid;
+			float: left;
+		}
+		.micro
+		{
+			height: 90%;
+			width: 100%;
+			border: 1px solid;
+		}
+		.miCro
+		{
+			height: 10%;
+			width: 100%;
+			border: 1px solid;
+			text-align: center;
+			font-size: 07px;
+		}
+		.it3
+		{
+			height: 50%;
+			width: 50%;
+			border: 1px solid;
+			float: left;
+		}
+
+		.it4
+		{
+			height: 50%;
+			width: 50%;
+			border: 1px solid;
+			float: left;
+		}
+		.tv
+		{
+			height: 90%;
+			width: 100%;
+			border: 1px solid;
+		}
+		.tV
+		{
+			height: 10%;
+			width: 100%;
+			border: 1px solid;
+			text-align: center;
+			font-size: 07px;
+		}
+		.img2
+		{
+			height: 100%;
+			width: 30%;
+			border: 2px solid black;
+			border-radius: 5px 5px;
+			float: left;
+			margin-left: 30px;
+			box-shadow: 1px 2px 10px 5px lightpink;
+		}
+		.text2
+		{
+			height: 20%;
+			width: 100%;
+			border: 1px solid;
+			font-family: cursive;
+			background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+		}
+		.items2
+		{
+			height: 70%;
+			width: 100%;
+			border: 1px solid;
+		}
+		.footer2
+		{
+			height: 10%;
+			width: 100%;
+			border: 1px solid;
+			text-align: center;
+			font-family: monospace;
+			background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+		}
+		
+		.img3
+		{
+			height: 100%;
+			width: 30%;
+			border: 2px solid black;
+			border-radius: 5px 5px;
+			float: right;
+			box-shadow: 1px 2px 10px 5px deepskyblue;
+		}
+		.text3
+		{
+			height: 20%;
+			width: 100%;
+/*			border: 1px solid;*/
+			font-family: cursive;
+			background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+		}
+		.items3
+		{
+			height: 70%;
+			width: 100%;
+/*			border: 1px solid;*/
+		}
+		.footer3
+		{
+			height: 10%;
+			width: 100%;
+/*			border: 1px solid;*/
+			text-align: center;
+			font-family: monospace;
+			background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+		}
+		.left
+		{
+			height: 100%;
+			width: 5%;
+			border: 1px solid;
+			float: left;
+		}
+		.center
+		{
+			height: 100%;
+			width: 90%;
+			border: 1px solid;
+			float: left;
+			padding: 1%;
+		}
+		.right
+		{
+			height: 100%;
+			width: 5%;
+			border: 1px solid;
+			float: left;
+		}
+		.box
+		{
+			height: 26%;
+			width: 38%;
+			margin-left: 275px;
+			margin-top: 100px;
+			display: flex;
+			border: 1px solid;
+			box-shadow: 1px 2px 10px 5px whitesmoke;
+			background-image: url("https://akm-img-a-in.tosshub.com/businesstoday/images/story/202210/amazon_sale-sixteen_nine.jpg?size=948:533");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			animation: amazon 12s infinite linear;
+			border-radius: 5px 5px;
+		}
+
+		@keyframes amazon
+		{
+			0%
+			{
+				background-image: url("https://akm-img-a-in.tosshub.com/businesstoday/images/story/202210/amazon_sale-sixteen_nine.jpg?size=948:533");
+			}
+
+			25%
+			{
+				background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_A0J8bKJ1q48WRGAPf1fe7zp4VWaa8JMQPd4DwQcLjHjibMhozxGslsrPrqj37asPaQ4&usqp=CAU");
+			}
+
+			50%
+			{
+				background-image: url("https://i.ytimg.com/vi/rdZELfbfaV4/hqdefault.jpg");
+			}
+
+			75%
+			{
+				background-image: url("https://www.businessinsider.in/thumb.cms?msid=94379722&width=1200&height=900");
+			}
+
+			100%
+			{
+				background-image: url("https://navbharattimes.indiatimes.com/thumb/103594499/amazon-mega-electronics-sale-on-laptop-tablet-camera-earbuds-smartwatch-103594499.jpg?imgsize=73290&width=1200&height=900&resizemode=75");
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="head">
+			AMAZON
+		</div>
+		<div class="body">
+			<div class="slide">
+				<div class="left">
+					
+				</div>
+				<div class="center">
+					<div class="box">
+						
+					</div>
+				</div>
+				<div class="right">
+					
+				</div>
+			</div>
+			<div class="trending">
+				<div class="text">
+					Top Trendings
+				</div>
+				<div class="images">
+					<div class="img1">
+						<div class="text1">
+							Appliances for your home || Up to 55% Off
+						</div>
+						<div class="items">
+							<div class="it1">
+								<div class="ac">
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCbI6UmBPxeTAZNAxWuLbvhdNfuyYFDB5Yw&usqp=CAU" style="height:100%; width: 100%;">
+								</div>
+								<div class="aC">
+									Air Conditioners
+								</div>
+							</div>
+							<div class="it2">
+								<div class="fridge">
+									<img src="https://5.imimg.com/data5/NO/WF/SC/SELLER-87528891/double-door-refrigerator.jpg" style="height:100%; width: 100%;">
+								</div>
+								<div class="friDge">
+									Refrigerators
+								</div>
+							</div>
+							<div class="it3">
+								<div class="micro">
+									<img src="https://cdn.britannica.com/73/191973-131-DD21FA2E/microwave-oven.jpg" style="height:100%; width: 100%;">
+								</div>
+								<div class="miCro">
+									Microwaves
+								</div>
+							</div>
+							<div class="it4">
+								<div class="tv">
+									<img src="https://i0.wp.com/www.upsinverter.com/wp-content/uploads/2022/06/3-4.jpg?fit=602%2C602&ssl=1" style="height:100%; width: 100%;">
+								</div>
+								<div class="tV">
+									LED TV
+								</div>
+							</div>
+						</div>
+						<div class="footer1">
+							<button style="border-radius: 25px 25px; background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+								SEE MORE
+							</button>
+						</div>
+					</div>
+					<div class="img2">
+						<div class="text2">
+							Up to 60% off || Styles for women
+						</div>
+						<div class="items2">
+							<div class="it1">
+								<div class="ac">
+									<img src="https://img.freepik.com/free-photo/young-beautiful-stylish-woman-pink-dress_285396-9655.jpg" style="height:100%; width: 100%;">
+								</div>
+								<div class="aC">
+									Women's Clothing
+								</div>
+							</div>
+							<div class="it2">
+								<div class="fridge">
+									<img src="https://previews.123rf.com/images/photosvit/photosvit1707/photosvit170701776/82959195-pair-of-shoes-in-pink-colour-with-handbag-and-perfume-bottle-sandals-and-purse-on-brown-background.jpg" style="height:100%; width: 100%;">
+								</div>
+								<div class="friDge">
+									Footwear + HandBags
+								</div>
+							</div>
+							<div class="it3">
+								<div class="micro">
+									<img src="https://digitaldressroom.com/cdn/shop/products/14NNS16_2.jpg?v=1611374904" style="height:100%; width: 100%;">
+								</div>
+								<div class="miCro">
+									Women's Jewellery
+								</div>
+							</div>
+							<div class="it4">
+								<div class="tv">
+									<img src="https://www.bewakoof.com/blog/wp-content/uploads/2022/04/Makeup-Brands-in-India-Blog-Feature-Banner_March_Article-2-scaled.jpg" style="height:100%; width: 100%;">
+								</div>
+								<div class="tV">
+									Make Up
+								</div>
+							</div>
+						</div>
+						<div class="footer2">
+								End of Season Sale						
+						</div>
+					</div>
+					<div class="img3">
+						<div class="text3">
+							Minimum 50% off || Top styles for him
+						</div>
+						<div class="items3">
+							<div class="it1">
+								<div class="ac">
+									<img src="https://imagescdn.thecollective.in/img/app/product/9/919436-11517244.jpg" style="height:100%; width: 100%;">
+								</div>
+								<div class="aC">
+									T-Shirts & Jeans
+								</div>
+							</div>
+							<div class="it2">
+								<div class="fridge">
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJkVL4RsCFFCds2Q62i3sdEIo9LcpKXaL2lA&usqp=CAU" style="height:100%; width: 100%;">
+								</div>
+								<div class="friDge">
+									Shoes
+								</div>
+							</div>
+							<div class="it3">
+								<div class="micro">
+									<img src="https://m.media-amazon.com/images/I/71VFs2XrDVL._AC_UY350_.jpg" style="height:100%; width: 100%;">
+								</div>
+								<div class="miCro">
+									Jackets
+								</div>
+							</div>
+							<div class="it4">
+								<div class="tv">
+									<img src="https://punerigifts.in/wp-content/uploads/2023/06/IMG_20230609_004542.jpg" style="height:100%; width: 100%;">
+								</div>
+								<div class="tV">
+									Watches & Wallets
+								</div>
+							</div>
+						</div>
+						<div class="footer3">
+							<button style="border-radius: 25px 25px; background-color: skyblue;">
+								EXPLORE MORE
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="panel1">				
+				<div class="home">
+					<img src="./Home.png" style="height: 100%; width: 100%; border-radius: 25px 25px;">
+				</div>
+			</div>
+			<div class="panel2">
+				<div class="products">
+					PRODUCTS
+				</div>
+			</div>
+			<div class="panel3">
+				<div class="cart">
+					<img src="./Cart.png" style="height: 100%; width: 100%; border-radius: 25px 25px;">
+				</div>
+			</div>
+			<div class="panel4">
+				<div class="profile">
+					<img src="./Profile.png" style="height: 100%; width: 100%; border-radius: 25px 25px;">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
