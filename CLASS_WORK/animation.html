@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Animation
+	</title>
+
+	<style type="text/css">
+		p
+		{
+			animation-name: slide;
+			animation-duration: 3s;
+			animation-timing-function: ease-in;
+			animation-delay: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+/*			animation-play-state: paused;*/
+		}
+
+		@keyframes slide
+		{
+		from
+		{
+			color: red;
+			margin-left: 100%;
+			font-size: 15px;
+		}
+		to
+		{
+			color: blue;
+			margin-left: 0%;
+			font-size: 30px;
+		}
+		}
+	</style>
+
+</head>
+<body>
+
+	<p>
+		Darshan University
+	</p>
+
+</body>
+</html>
